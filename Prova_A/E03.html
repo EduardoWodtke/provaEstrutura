@@ -26,10 +26,12 @@
     //Saída
 
     if(chapa1 > chapa2){
-        document.write("A vitoria vai para... Chapa 1!!!!!!!");
+        const perc = chapa1 / 15 * 100;
+        document.write("A vitoria vai para... Chapa 1!!!!!!! a porcentagem de vitoria foi: " + perc);
     }else if(chapa1 === chapa2){
         document.write("O resultado foi... Empate!!!");
     }else{
-        document.write("A vitoria vai para... Chapa 2!!!!!!!!");
+        const perc = chapa2 / 15 * 100;
+        document.write("A vitoria vai para... Chapa 2!!!!!!!! a portcentagem de vitoria foi: " + perc);
     }
 </script>

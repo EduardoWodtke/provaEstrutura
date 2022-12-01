@@ -15,14 +15,16 @@
         for (let contador = 1; contador <= quantoTempoM; contador++) {
             valorGanhoM = valorGanhoM * 1.01
         }
-        document.write("O valor de " + quantiaIncial + " se transformara em " + valorGanhoM.toFixed(1));
+        const perc = valorGanhoM / quantoTempoM * 100;
+        document.write("O valor de " + quantiaIncial + " se transformara em " + valorGanhoM.toFixed(1) + " a porcentagem de crescimento é: " + perc);
     } else if (tempo === "ano") {
         let quantoTempoA = parseInt(prompt("Quantos anos predente deixar guardado?"));
         let valorGanhoA = quantiaIncial;
         for (let contador = 1; contador <= quantoTempoA; contador++) {
             valorGanhoA = valorGanhoA * 1.0025
         }
-        document.write("O valor de " + quantiaIncial + " se transformara em " + valorGanhoA.toFixed(1));
+        const perc = valorGanhoA / quantoTempoA * 100;
+        document.write("O valor de " + quantiaIncial + " se transformara em " + valorGanhoA.toFixed(1) + " a porcentagem de crescimento é: " + perc);
     }
 
     

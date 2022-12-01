@@ -9,10 +9,21 @@
 
     //Entrada
 
+    let qntCombustivel = 400;
+    let qntVeiculos = 0;
+    let totalVendido = 0;
 
     //Processamento
 
+    for(qntVeiculos = 1; totalVendido < qntCombustivel; qntVeiculos++) {
+        vendido = Number(prompt("Quanto o veiculo abasteceu?"));
+        totalVendido = vendido + totalVendido;
+    } 
+
+    qntVeiculos = qntVeiculos - 1;
 
     //Saída
+
+    document.write("A quantidade de carros que pode abastecer é: " + qntVeiculos);
 
 </script>

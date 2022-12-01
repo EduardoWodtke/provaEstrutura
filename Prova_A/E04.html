@@ -8,10 +8,26 @@
 
     //Entrada
 
+    let notas6Mais = 0;
+    let notas6Menos = 0;
+    let todasNotas = 0;
 
     //Processamento
 
+    for(let contador = 1; contador <= 10; contador++){
+        let nota = Number(prompt("Qual foi a nota do " + contador + "° aluno?"));
+        todasNotas = todasNotas + nota;
+        if(nota < 6){
+            notas6Menos++
+        }else if(nota => 6){
+            notas6Mais++
+        }
+    }
+
+    let mediaTurma = todasNotas / 10
 
     //Saída
+
+    document.write("<li>Tivemos o total de " + notas6Menos + " notas abaixo da media, porem tivemos " + notas6Mais + " notas acima da media. A média da turma foi " + mediaTurma + ".</li>")
 
 </script>

@@ -8,10 +8,30 @@
 
     //Entrada
 
-
+    let qtnGenerosM = 0; 
+    let qtnGenerosF = 0;
+    let somaDeIdadesM = 0;
+    let somaDeIdadesF = 0;
+    
     //Processamento
 
+    for(let contador = 1; contador <= 5; contador++){
+        let genero = prompt("Qual o seu genero?(F-Feminino || M-Masculino)");
+        let idade = parseInt(prompt("Qual a sua idade?"));
+        if(genero === "M"){
+            qtnGenerosM++;
+            somaDeIdadesM = idade + somaDeIdadesM;
+        }else if(genero === "F"){
+            qtnGenerosF++;
+            somaDeIdadesF = idade + somaDeIdadesF;
+        }
+    }
+
+    let mediaIdadeM = somaDeIdadesM / qtnGenerosM;
+    let mediaIdadeF = somaDeIdadesF / qtnGenerosF;
 
     //Saída
+
+    document.write("<li>Quantidade de homens são: " + qtnGenerosM + " e a media de idade é: " + mediaIdadeM.toFixed(1) + ".</li></br><li>Já a quantidade de mulheres são: " + qtnGenerosF + " e a media de idade é: " + mediaIdadeF.toFixed(1));
 
 </script>
